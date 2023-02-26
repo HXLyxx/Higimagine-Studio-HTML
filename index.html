@@ -1,54 +1,462 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="UTF-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Higimagine Studio</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="./css/btnstyle.css">
-      <link rel="shortcut icon" href="Higimagine.ico" type="image/x-icon" />
-  </head>
-  <body>
-      <div class="container">
-        <div class="section">
-          <div class="content">
-            <h2>Higimagine Studio</h2>
-            <p>本工作室创始于2022.01.03，我们一直在努力学习并不断开发，
-              终有一天我们会取得好的成就！</p>
-          </div>
+<html lang="en">
+
+<head>
+  <title>Xzaiの个人主页</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- CACHE -->
+  <meta content="max-age=86400 must-revalidate" http-equiv="Cache-Control"/>
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <meta content="0" http-equiv="Expires"/>
+
+  <!-- FAVICON -->
+  <link href="/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- MAIN -->
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <!-- Information -->
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <picture>
+            <source srcset="/assets/img/Xzai.webp" type="image/webp">
+            <source srcset="/assets/img/Xzai.png" type="image/jpeg">
+            <img alt="Xzai" src="/assets/img/Xzai.png" width="80">
+          </picture>
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Xzai">Xzai</h1>
+          <p class="title" i18n>Developer//开发者</p>
         </div>
-        <div class="section">
-          <div class="content">
-            <h2>更好地交流</h2>
-            <p>你可以加入我们的工作室，在里面畅聊，交流，一起开发
-            由于人数限制，我们不得不开启加入验证，请点击按钮填写问卷，审核通过后就可进入了！</p>
-          </div>
-          <button onclick="window.location.href = 'https://jq.qq.com/?_wv=1027&k=qSy4UHK0'">
-           <a href="#">加入QQ群</a>
-          </button>
-        </div>
-        <div class="section">
-          <div class="content">
-            <h2>Higimagine Studio</h2>
-            <p>本工作室创始于2022.01.03，我们一直在努力学习并不断开发，
-              终有一天我们会取得好的成就！</p>
-          </div>
-        </div>
-        <div class="section">
-          <div class="content">
-            <h2>Higimagine Studio</h2>
-            <p>本工作室创始于2022.01.03，我们一直在努力学习并不断开发，
-              终有一天我们会取得好的成就！</p>
-          </div>
-        </div>
-        <div class="section">
-          <div class="content">
-            <h2>Higimagine Studio</h2>
-            <p>本工作室创始于2022.01.03，我们一直在努力学习并不断开发，
-              终有一天我们会取得好的成就！</p>
-          </div>
-        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span><i class="bi bi-plus"></i>&nbsp;<text i18n>Show Contacts//联系方式</text></span>
+        </button>
       </div>
-  </body>
+
+      <!-- Contacts -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Email//邮箱</p>
+              <a href="mailto:xzai0313@qq.com" class="contact-link">xzai0313@qq.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-chat-left-dots"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Gitter//聊天室</p>
+              <a href="https://matrix.to/#/#XzaiCloud:gitter.im" class="contact-link" target="_blank">XzaiCloud</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-clock"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Timezone//时区</p>
+              <time datetime="1982-06-23">UTC +08:00</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <i class="bi bi-translate"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" i18n>Language//语言</p>
+              <address>zh-CN</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social -->
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/XzaiCloud" class="social-link" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/CloudXzai" class="social-link" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="social-link" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://afdian.net/a/CN-2B2T" class="social-link" target="_blank">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Photos</button>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" target="_blank">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <togglelang class="navbar-link bi bi-translate"></togglelang>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title" i18n>About me//关于我</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            My name is Xzai.//我是 Xzai.
+          </p>
+          <p>
+            <span i18n>I'm a Minecraft player who loves playing multiplayer and is fond of making server plugins. I have
+              developed
+              a hobby of making Minecraft server plugins over the past several years, and also help translate plugins
+              into Chinese (Simplified).//我是一名喜欢游玩服务器并且以开发服务端插件为乐的 Minecraft 玩家。前几年我养成了开发 Minecraft
+              服务的插件的兴趣，并帮助翻译多个插件至简体中文。</span><br>
+            <span i18n>Feel free to ask me questions about Minecraft server setup making.&#x1F604;//欢迎问我 Minecraft
+              服务的制作相关的问题。&#x1F604;</span>
+          </p>
+          <p>
+            <text i18n>Most of my projects are in //我大部分的项目都在 </text><a href="https://github.com/XzaiCloud" class="link"
+              target="_blank">XzaiCloud</a><text i18n>. Everyone is welcome to join the lab and make contributions.// 中。欢迎所有人加入并作出贡献。</text>
+          </p>
+        </section>
+
+        <!-- Doing -->
+        <section class="service">
+          <h3 class="h3 service-title" i18n>My hobbies//兴趣爱好</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source srcset="/assets/img/icon-learning.webp" type="image/webp">
+                  <source srcset="/assets/img/icon-learning.png" type="image/jpeg">
+                  <img alt="Learing" src="/assets/img/icon-learning.png" width="40">
+                </picture>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Learing//学</h4>
+                <p class="service-item-text" i18n>
+                  One is never too old to learn. Learning will become fun.//生命不息，奋斗不止。
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source srcset="/assets/img/icon-coding.webp" type="image/webp">
+                  <source srcset="/assets/img/icon-coding.png" type="image/jpeg">
+                  <img alt="Coding" src="/assets/img/icon-coding.png" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Coding//敲代码</h4>
+                <p class="service-item-text" i18n>
+                  Write code all my life, no matter rain or sunshine.//人生苦短，我用____。
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source srcset="/assets/img/icon-drawing.webp" type="image/webp">
+                  <source srcset="/assets/img/icon-drawing.png" type="image/jpeg">
+                  <img alt="Drawing" src="/assets/img/icon-drawing.png" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Drawing//绘图</h4>
+                <p class="service-item-text" i18n>
+                  Get inspired by my everyday life. Can't help but recording it.//已摒弃的爱好。
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <picture>
+                  <source srcset="/assets/img/icon-photographing.webp" type="image/webp">
+                  <source srcset="/assets/img/icon-photographing.png" type="image/jpeg">
+                  <img alt="Drawing" src="/assets/img/icon-photographing.png" width="40">
+                </picture>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" i18n>Photographing//摄影</h4>
+                <p class="service-item-text" i18n>
+                  Always fascinated by the magnificent scenery of the natural world.//记录生活点滴。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- DO NOT delete this or navbar won't work -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <!-- Projects -->
+      <article class="blog" data-page="projects">
+        <header>
+          <h2 class="h2 article-title" i18n>Major Projects//主要项目</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            Click them and explore more projects included in these major projects.//点击可查看包含在如下主要项目内的更多项目。
+          </p>
+        </section>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="/assets/media/阳光开朗大男孩.mp3" target="_blank">
+                <figure class="blog-banner-box">
+                  <picture>
+                    <source srcset="/assets/img/阳光开朗大男孩.jpg" type="image/jpeg">
+                    <img alt="阳光开朗大男孩" loading="lazy" src="/assets/img/阳光开朗大男孩.jpg">
+                  </picture>
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" i18n>Music//音乐</p>
+                    <span class="dot"></span>
+                    <time datetime="2018-08-08">2023.02.23</time>
+                  </div>
+                  <h3 class="h3 blog-item-title" i18n>阳光开朗大男孩//阳光开朗大男孩</h3>
+                  <p class="blog-text" i18n>
+                    Luo Tianyi AI//洛天依AI
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="/assets/media/可愛くてごめん.mp3" target="_blank">
+                <figure class="blog-banner-box">
+                  <picture>
+                    <source srcset="/assets/img/可愛くてごめん.jpg" type="image/jpeg">
+                    <img alt="可愛くてごめん" loading="lazy" src="/assets/img/可愛くてごめん.jpg">
+                  </picture>
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" i18n>Music//音乐</p>
+                    <span class="dot"></span>
+                    <time datetime="2018-08-08">2023.02.23</time>
+                  </div>
+                  <h3 class="h3 blog-item-title" i18n>可愛くてごめん//可愛くてごめん</h3>
+                  <p class="blog-text" i18n>
+                    Luo Tianyi AI//洛天依AI
+                  </p>
+                </div>
+              </a>
+            </li>
+
+<!--            <li class="blog-post-item">-->
+<!--              <a href="https://Xzais.github.io" target="_blank">-->
+<!--                <figure class="blog-banner-box">-->
+<!--                  <picture>-->
+<!--                    <source type="image/webp" srcset="./assets/img/projects_lab.webp">-->
+<!--                    <source type="image/jpeg" srcset="./assets/img/projects_lab.PNG">-->
+<!--                    <img src="./assets/img/projects_lab.PNG" alt="Xzai Lab" loading="lazy">-->
+<!--                  </picture>-->
+<!--                </figure>-->
+<!--                <div class="blog-content">-->
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category" i18n>Codes & Contents//代码、项目</p>-->
+<!--                    <span class="dot"></span>-->
+<!--                    <time datetime="2020-08-21">2020.08.21</time>-->
+<!--                  </div>-->
+<!--                  <h3 class="h3 blog-item-title">Xzai Lab</h3>-->
+<!--                  <p class="blog-text" i18n>-->
+<!--                    Open source projects and samples from Xzai and other partners, aiming to share and improve-->
+<!--                    experience.//来自 Xzai 和小伙伴们的开源项目。-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </a>-->
+<!--            </li>-->
+          </ul>
+        </section>
+      </article>
+
+      <!-- Photos -->
+      <article class="portfolio" data-page="photos">
+        <header>
+          <h2 class="h2 article-title" i18n>Photo Album//精选图集</h2>
+        </header>
+        <section class="about-text">
+          <p i18n>
+            In real life, I'm a non-professional photographer. I take my camera wherever I go, and record the exciting
+            moments of life. Can't wait to share some of them!//我喜欢拍照。我随身携带相机，并记录美好时光。
+          </p>
+        </section>
+        <section class="projects">
+          <!--          <ul class="filter-list">-->
+          <!--            <li class="filter-item">-->
+          <!--              <button class="active" data-filter-btn>All</button>-->
+          <!--            </li>-->
+          <!--            <li class="filter-item">-->
+          <!--              <button data-filter-btn>Landscape</button>-->
+          <!--            </li>-->
+          <!--            <li class="filter-item">-->
+          <!--              <button data-filter-btn>Items</button>-->
+          <!--            </li>-->
+          <!--            <li class="filter-item">-->
+          <!--              <button data-filter-btn>Moments</button>-->
+          <!--            </li>-->
+          <!--          </ul>-->
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value i18n>Select category//选择分类</div>
+              <div class="select-icon">
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Landscape</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Items</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Moments</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item>
+              <a data-fslightbox href="/assets/photos/001.jpg">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <i class="bi bi-zoom-in"></i>
+                  </div>
+                  <img alt="Autodyne" loading="lazy"
+                       src="/assets/photos/001.jpg">
+                </figure>
+                <h3 class="project-title" i18n>随手拍的</h3>
+                <p class="project-category" i18n>Autodyne//自拍</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item>
+              <a data-fslightbox href="/assets/photos/002.jpg">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <i class="bi bi-zoom-in"></i>
+                  </div>
+                  <img alt="Autodyne" loading="lazy"
+                       src="/assets/photos/002.jpg">
+                </figure>
+                <h3 class="project-title" i18n>随手拍的</h3>
+                <p class="project-category" i18n>Autodyne//自拍</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/fslightbox.min.js"></script>
+  <script src="/assets/js/dom-i18n.min.js"></script>
+  <script>
+    window.onload = function () {
+      if (navigator.language === 'zh-CN') {
+        document.querySelector("togglelang").classList.add('zh-CN');
+      }
+    }
+
+    var i18n = window.domI18n({
+      selector: '[i18n]',
+      separator: '//',
+      languages: ['en', 'zh-CN'],
+      defaultLanguage: 'en'
+    });
+
+    const togglelang = document.querySelector("togglelang");
+    const classes = togglelang.classList;
+    togglelang.onclick = function (e) {
+      if (!classes.contains('zh-CN')) {
+        i18n.changeLanguage('zh-CN');
+        classes.add('zh-CN');
+      } else {
+        i18n.changeLanguage('en');
+        classes.remove('zh-CN');
+      }
+      e.preventDefault();
+    };
+  </script>
+</body>
+
 </html>
